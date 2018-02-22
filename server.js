@@ -27,9 +27,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, resp, next) =>{
-    resp.render('maint.hbs');
-});
 
 app.get('/', (req, resp)=> {
     resp.send({
